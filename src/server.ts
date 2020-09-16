@@ -8,3 +8,5 @@ export * from './errors/RequestValidationError';
 export * from './middlewares/auth';
 export * from './middlewares/error-handler';
 export * from './middlewares/validate-request';
+
+export * from './utils/jwt';
