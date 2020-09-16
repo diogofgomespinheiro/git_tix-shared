@@ -17,11 +17,7 @@
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "baseUrl": ".",
-    "paths": {
-      "@errors/*": ["./src/errors/*"],
-      "@middlewares/*": ["./src/middlewares/*"],
-      "@utils/*": ["./src/utils/*"]
-    }
+    "paths": {}
   },
   "include": [
     "src/**/*"

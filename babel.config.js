@@ -10,17 +10,6 @@ module.exports = {
     ],
     '@babel/preset-typescript',
   ],
-  plugins: [
-    [
-      'module-resolver',
-      {
-        alias: {
-          '@errors': './src/errors',
-          '@middlewares': './src/middlewares',
-          '@utils': './src/utils',
-        },
-      },
-    ],
-  ],
+  plugins: [],
   ignore: ['**/*.spec.ts'],
 };
