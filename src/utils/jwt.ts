@@ -1,17 +1,20 @@
 import jwt from 'jsonwebtoken';
 
 export class JsonWebToken {
-  static generateToken(user: {
-    id?: string;
-    email: string;
-    password: string;
-  }): string {
+  static generateToken(
+    payload: {
+      id?: string;
+      email: string;
+      password?: string;
+    },
+    jwtKey = process.env.JWT_KEY!,
+  ): string {
     return jwt.sign(
       {
-        id: user.id,
-        email: user.email,
+        id: payload.id,
+        email: payload.email,
       },
-      process.env.JWT_KEY!,
+      jwtKey,
     );
   }
 
