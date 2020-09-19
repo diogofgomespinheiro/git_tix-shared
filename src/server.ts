@@ -10,3 +10,10 @@ export * from './middlewares/error-handler';
 export * from './middlewares/validate-request';
 
 export * from './utils/jwt';
+
+export * from './events/baseListener';
+export * from './events/basePublisher';
+export * from './events/subjects';
+
+export * from './events/implementations/ticket/ticketCreatedEvent';
+export * from './events/implementations/ticket/ticketUpdatedEvent';
