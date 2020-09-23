@@ -4,7 +4,7 @@ interface ITicket {
   id: string;
 }
 
-export interface OrderCancelledvent {
+export interface OrderCancelledEvent {
   subject: Subjects.OrderCancelled;
   data: {
     id: string;
