@@ -17,5 +17,7 @@ export * from './events/subjects';
 
 export * from './events/implementations/ticket/ticketCreatedEvent';
 export * from './events/implementations/ticket/ticketUpdatedEvent';
+export * from './events/implementations/order/orderCancelledEvent';
+export * from './events/implementations/order/orderCreatedEvent';
 
 export * from './events/types/orderStatus';
